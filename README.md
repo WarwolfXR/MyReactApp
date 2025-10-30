@@ -45,8 +45,8 @@ src/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/react-cards-dashboard.git
-cd react-cards-dashboard
+git clone https:https://github.com/WarwolfXR/MyReactApp.git
+cd ReactApp
 ```
 
 ### 2. Install dependencies
