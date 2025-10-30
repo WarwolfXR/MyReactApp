@@ -7,27 +7,27 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: #f9f9f9;
+  color: #222;
+}
+
+body.dark {
+  background: #121212;
+  color: #f9f9f9;
 }
 
 .app {
   text-align: center;
-  background: #f9f9f9;
-  color: #222;
+  background: transparent;
   min-height: 80vh;
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   max-width: 900px;
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.app.dark {
-  background: #222;
-  color: #f9f9f9;
 }
 
 .card-container {
@@ -46,9 +46,10 @@ body {
   width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+  color: #222;
 }
 
-.app.dark .card {
+body.dark .card {
   background: #333;
   color: white;
 }

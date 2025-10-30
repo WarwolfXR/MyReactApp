@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ThemeCard from "./components/ThemeCard";
 import CounterCard from "./components/CounterCard";
 import TodoCard from "./components/TodoCard";
@@ -7,8 +7,16 @@ import "./App.css";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
-    <div className={darkMode ? "app dark" : "app"}>
+    <div className="app">
       <h1>React Cards Dashboard</h1>
       <div className="card-container">
         <ThemeCard darkMode={darkMode} setDarkMode={setDarkMode} />
