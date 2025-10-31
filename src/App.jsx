@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ThemeCard from "./components/ThemeCard";
 import CounterCard from "./components/CounterCard";
-import TodoCard from "./components/TodoCard";
+import TodoCard from "./components/ToDoCard";
 import "./App.css";
 
 function App() {
